@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Moni – Privacy Policy / 개인정보처리방침</title>
+  <style>
+    :root {
+      --blue: #007AFF;
+      --bg: #f5f5f7;
+      --card: #ffffff;
+      --text: #1d1d1f;
+      --sub: #6e6e73;
+      --border: #d2d2d7;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #000000;
+        --card: #1c1c1e;
+        --text: #f5f5f7;
+        --sub: #98989d;
+        --border: #3a3a3c;
+      }
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+      padding: 0 16px 64px;
+    }
+    header {
+      text-align: center;
+      padding: 56px 0 32px;
+    }
+    header .icon {
+      width: 80px; height: 80px;
+      background: var(--blue);
+      border-radius: 18px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 40px;
+      margin-bottom: 16px;
+    }
+    header h1 { font-size: 28px; font-weight: 700; }
+    header p  { color: var(--sub); margin-top: 6px; font-size: 15px; }
+
+    .lang-switch {
+      display: flex;
+      justify-content: center;
+      gap: 8px;
+      margin-bottom: 32px;
+    }
+    .lang-switch button {
+      padding: 6px 20px;
+      border-radius: 20px;
+      border: 1.5px solid var(--blue);
+      background: transparent;
+      color: var(--blue);
+      font-size: 14px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all .15s;
+    }
+    .lang-switch button.active {
+      background: var(--blue);
+      color: #fff;
+    }
+
+    .content { display: none; max-width: 720px; margin: 0 auto; }
+    .content.visible { display: block; }
+
+    .card {
+      background: var(--card);
+      border-radius: 16px;
+      padding: 24px;
+      margin-bottom: 16px;
+      border: 1px solid var(--border);
+    }
+    .card h2 {
+      font-size: 17px;
+      font-weight: 700;
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .card h2 .emoji { font-size: 20px; }
+    .card p  { font-size: 15px; color: var(--text); margin-bottom: 8px; }
+    .card p:last-child { margin-bottom: 0; }
+    .card ul { padding-left: 20px; font-size: 15px; }
+    .card ul li { margin-bottom: 6px; }
+    .highlight {
+      background: rgba(0,122,255,.08);
+      border-left: 3px solid var(--blue);
+      padding: 12px 16px;
+      border-radius: 0 8px 8px 0;
+      font-size: 15px;
+      margin-top: 8px;
+    }
+    .tag {
+      display: inline-block;
+      background: rgba(0,122,255,.12);
+      color: var(--blue);
+      border-radius: 6px;
+      padding: 2px 8px;
+      font-size: 13px;
+      font-weight: 600;
+    }
+    footer {
+      text-align: center;
+      color: var(--sub);
+      font-size: 13px;
+      margin-top: 40px;
+    }
+    a { color: var(--blue); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="icon">💰</div>
+  <h1>Moni</h1>
+  <p>Privacy Policy &nbsp;/&nbsp; 개인정보처리방침</p>
+</header>
+
+<div class="lang-switch">
+  <button class="active" onclick="setLang('ko')">한국어</button>
+  <button onclick="setLang('en')">English</button>
+</div>
+
+<!-- ───────────── KOREAN ───────────── -->
+<div id="ko" class="content visible">
+
+  <div class="card">
+    <h2><span class="emoji">📅</span> 시행일</h2>
+    <p>본 방침은 <strong>2026년 6월 26일</strong>부터 적용됩니다.</p>
+  </div>
+
+  <div class="card">
+    <h2><span class="emoji">🛡️</span> 핵심 원칙</h2>
+    <div class="highlight">
+      Moni는 사용자의 재무 데이터를 개발자 서버로 전송하거나 수집하지 않습니다.<br>
+      모든 데이터는 <strong>기기 내부</strong> 또는 사용자 본인의 <strong>iCloud 개인 데이터베이스</strong>에만 저장됩니다.
+    </div>
+  </div>
+
+  <div class="card">
+    <h2><span class="emoji">📂</span> 수집하는 데이터</h2>
+    <p><strong>수집하지 않습니다.</strong></p>
+    <p>거래 내역, 계좌 정보, 예산, 저축 목표 등 앱 내 모든 재무 데이터는 다음 두 곳에만 저장됩니다.</p>
+    <ul>
+      <li><strong>온디바이스</strong> — SwiftData (기기 내 SQLite)</li>
+      <li><strong>사용자 iCloud</strong> — CloudKit 개인 데이터베이스 (개발자 접근 불가)</li>
+    </ul>
+    <p style="margin-top:12px">개발자는 사용자 데이터에 접근하거나 열람할 수 없습니다.</p>
+  </div>
+
+  <div class="card">
+    <h2><span class="emoji">🔄</span> 외부 네트워크 요청</h2>
+    <p>앱이 외부에 연결하는 경우는 <strong>환율 조회</strong> 한 가지뿐입니다.</p>
+    <ul>
+      <li>서버: <code>open.er-api.com</code></li>
+      <li>전송 내용: 기준 통화 코드만 (예: <code>MXN</code>)</li>
+      <li>사용자 식별 정보 일절 미포함</li>
+      <li>해당 서비스의 <a href="https://www.exchangerate-api.com/privacy" target="_blank">개인정보처리방침</a></li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2><span class="emoji">📷</span> 카메라 권한</h2>
+    <p>영수증 스캔 기능에서 카메라를 사용합니다. 촬영한 이미지는 기기 내에서 텍스트 인식(Vision 프레임워크)에만 사용되며, 외부로 전송되지 않습니다.</p>
+    <p><span class="tag">선택적 권한</span> — 사용하지 않으면 요청되지 않습니다.</p>
+  </div>
+
+  <div class="card">
+    <h2><span class="emoji">🔒</span> Face ID / Touch ID</h2>
+    <p>앱 잠금 기능에서 생체 인증을 사용합니다. 생체 정보는 Apple의 Secure Enclave에서 처리되며, Moni 앱은 생체 데이터에 접근할 수 없습니다.</p>
+    <p><span class="tag">선택적 기능</span> — 앱 잠금 설정 시에만 활성화됩니다.</p>
+  </div>
+
+  <div class="card">
+    <h2><span class="emoji">☁️</span> iCloud / CloudKit</h2>
+    <p>CloudKit 동기화를 활성화하면 데이터가 사용자 본인의 iCloud 계정(Apple ID)에 저장됩니다. 이 데이터베이스는 완전히 비공개이며, 개발자는 접근 권한을 가지고 있지 않습니다.</p>
+    <p>iCloud 동기화는 기기의 설정에서 언제든지 비활성화할 수 있습니다.</p>
+  </div>
+
+  <div class="card">
+    <h2><span class="emoji">👨‍👩‍👧</span> Family Sharing</h2>
+    <p>Family Sharing 기능을 사용하면 구성원 간 거래 데이터를 공유할 수 있습니다. 이 데이터는 Apple의 iCloud 인프라를 통해서만 전달되며, 개발자 서버를 경유하지 않습니다.</p>
+  </div>
+
+  <div class="card">
+    <h2><span class="emoji">🔔</span> 알림</h2>
+    <p>예산 초과, 저축 목표, 지출 이상 감지 등의 알림은 기기 내에서 생성되며 외부 서버를 사용하지 않습니다. 알림 권한은 설정에서 언제든지 변경할 수 있습니다.</p>
+  </div>
+
+  <div class="card">
+    <h2><span class="emoji">👶</span> 아동 개인정보</h2>
+    <p>Moni는 13세 미만 아동을 대상으로 하지 않으며, 아동의 개인정보를 의도적으로 수집하지 않습니다.</p>
+  </div>
+
+  <div class="card">
+    <h2><span class="emoji">✉️</span> 문의</h2>
+    <p>개인정보처리방침에 관한 문의는 아래 이메일로 연락해 주세요.</p>
+    <p><a href="mailto:jgh1775@naver.com">jgh1775@naver.com</a></p>
+  </div>
+
+</div>
+
+<!-- ───────────── ENGLISH ───────────── -->
+<div id="en" class="content">
+
+  <div class="card">
+    <h2><span class="emoji">📅</span> Effective Date</h2>
+    <p>This policy is effective as of <strong>June 26, 2026</strong>.</p>
+  </div>
+
+  <div class="card">
+    <h2><span class="emoji">🛡️</span> Core Principle</h2>
+    <div class="highlight">
+      Moni does not transmit or collect your financial data on any developer-controlled server.<br>
+      All data is stored exclusively <strong>on your device</strong> or in your own <strong>private iCloud database</strong>.
+    </div>
+  </div>
+
+  <div class="card">
+    <h2><span class="emoji">📂</span> Data We Collect</h2>
+    <p><strong>We collect nothing.</strong></p>
+    <p>All financial data (transactions, accounts, budgets, savings goals) is stored only in:</p>
+    <ul>
+      <li><strong>On-device</strong> — SwiftData (local SQLite database)</li>
+      <li><strong>Your iCloud</strong> — CloudKit private database (inaccessible to the developer)</li>
+    </ul>
+    <p style="margin-top:12px">The developer has no access to your data at any time.</p>
+  </div>
+
+  <div class="card">
+    <h2><span class="emoji">🔄</span> External Network Requests</h2>
+    <p>The only external connection Moni makes is to fetch <strong>exchange rates</strong>.</p>
+    <ul>
+      <li>Server: <code>open.er-api.com</code></li>
+      <li>Sent: base currency code only (e.g. <code>MXN</code>)</li>
+      <li>No personally identifiable information is ever sent</li>
+      <li>See their <a href="https://www.exchangerate-api.com/privacy" target="_blank">privacy policy</a></li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2><span class="emoji">📷</span> Camera Access</h2>
+    <p>The camera is used for the receipt-scanning feature. Images are processed on-device using Apple's Vision framework for text recognition only. No images are uploaded or transmitted.</p>
+    <p><span class="tag">Optional permission</span> — only requested when you use the scanner.</p>
+  </div>
+
+  <div class="card">
+    <h2><span class="emoji">🔒</span> Face ID / Touch ID</h2>
+    <p>Biometric authentication is used for the App Lock feature. Biometric data is handled entirely by Apple's Secure Enclave. Moni has no access to your biometric data.</p>
+    <p><span class="tag">Optional feature</span> — only activated when App Lock is enabled.</p>
+  </div>
+
+  <div class="card">
+    <h2><span class="emoji">☁️</span> iCloud / CloudKit</h2>
+    <p>When iCloud sync is enabled, your data is stored in your own iCloud account (Apple ID). This database is fully private — the developer has no access to it whatsoever.</p>
+    <p>You can disable iCloud sync at any time from your device's Settings.</p>
+  </div>
+
+  <div class="card">
+    <h2><span class="emoji">👨‍👩‍👧</span> Family Sharing</h2>
+    <p>Family Sharing allows transaction data to be shared among family members. Data flows exclusively through Apple's iCloud infrastructure and never passes through developer-controlled servers.</p>
+  </div>
+
+  <div class="card">
+    <h2><span class="emoji">🔔</span> Notifications</h2>
+    <p>Budget alerts, savings goal reminders, and spending anomaly notifications are generated on-device without any external server. You can change notification permissions at any time in Settings.</p>
+  </div>
+
+  <div class="card">
+    <h2><span class="emoji">👶</span> Children's Privacy</h2>
+    <p>Moni is not directed at children under 13, and we do not knowingly collect personal information from children.</p>
+  </div>
+
+  <div class="card">
+    <h2><span class="emoji">✉️</span> Contact</h2>
+    <p>For questions about this privacy policy, please contact:</p>
+    <p><a href="mailto:jgh1775@naver.com">jgh1775@naver.com</a></p>
+  </div>
+
+</div>
+
+<footer>
+  <p>© 2026 Moni · <a href="mailto:jgh1775@naver.com">jgh1775@naver.com</a></p>
+</footer>
+
+<script>
+  function setLang(lang) {
+    document.querySelectorAll('.content').forEach(el => el.classList.remove('visible'));
+    document.querySelectorAll('.lang-switch button').forEach(btn => btn.classList.remove('active'));
+    document.getElementById(lang).classList.add('visible');
+    event.target.classList.add('active');
+  }
+</script>
+
+</body>
+</html>
