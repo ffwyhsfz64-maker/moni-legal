@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Moni – Privacy Policy / 개인정보처리방침</title>
+  <title>Moni – Privacy Policy / 개인정보처리방침 / Política de Privacidad</title>
   <style>
     :root {
       --blue: #007AFF;
@@ -52,6 +52,7 @@
       justify-content: center;
       gap: 8px;
       margin-bottom: 32px;
+      flex-wrap: wrap;
     }
     .lang-switch button {
       padding: 6px 20px;
@@ -124,12 +125,13 @@
 <header>
   <div class="icon">💰</div>
   <h1>Moni</h1>
-  <p>Privacy Policy &nbsp;/&nbsp; 개인정보처리방침</p>
+  <p>개인정보처리방침 &nbsp;/&nbsp; Privacy Policy &nbsp;/&nbsp; Política de Privacidad</p>
 </header>
 
 <div class="lang-switch">
-  <button class="active" onclick="setLang('ko')">한국어</button>
-  <button onclick="setLang('en')">English</button>
+  <button class="active" onclick="setLang('ko', this)">한국어</button>
+  <button onclick="setLang('en', this)">English</button>
+  <button onclick="setLang('es', this)">Español</button>
 </div>
 
 <!-- ───────────── KOREAN ───────────── -->
@@ -290,16 +292,95 @@
 
 </div>
 
+<!-- ───────────── ESPAÑOL ───────────── -->
+<div id="es" class="content">
+
+  <div class="card">
+    <h2><span class="emoji">📅</span> Fecha de vigencia</h2>
+    <p>Esta política es efectiva a partir del <strong>26 de junio de 2026</strong>.</p>
+  </div>
+
+  <div class="card">
+    <h2><span class="emoji">🛡️</span> Principio fundamental</h2>
+    <div class="highlight">
+      Moni no transmite ni recopila tus datos financieros en ningún servidor controlado por el desarrollador.<br>
+      Todos los datos se almacenan exclusivamente <strong>en tu dispositivo</strong> o en tu propia <strong>base de datos privada de iCloud</strong>.
+    </div>
+  </div>
+
+  <div class="card">
+    <h2><span class="emoji">📂</span> Datos que recopilamos</h2>
+    <p><strong>No recopilamos nada.</strong></p>
+    <p>Todos los datos financieros (transacciones, cuentas, presupuestos, metas de ahorro) se almacenan únicamente en:</p>
+    <ul>
+      <li><strong>En el dispositivo</strong> — SwiftData (base de datos SQLite local)</li>
+      <li><strong>Tu iCloud</strong> — Base de datos privada de CloudKit (inaccesible para el desarrollador)</li>
+    </ul>
+    <p style="margin-top:12px">El desarrollador no tiene acceso a tus datos en ningún momento.</p>
+  </div>
+
+  <div class="card">
+    <h2><span class="emoji">🔄</span> Solicitudes de red externas</h2>
+    <p>La única conexión externa que realiza Moni es para obtener <strong>tipos de cambio</strong>.</p>
+    <ul>
+      <li>Servidor: <code>open.er-api.com</code></li>
+      <li>Se envía únicamente el código de la moneda base (p. ej. <code>MXN</code>)</li>
+      <li>No se envía ninguna información de identificación personal</li>
+      <li>Consulta su <a href="https://www.exchangerate-api.com/privacy" target="_blank">política de privacidad</a></li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2><span class="emoji">📷</span> Acceso a la cámara</h2>
+    <p>La cámara se utiliza para la función de escaneo de recibos. Las imágenes se procesan en el dispositivo mediante el framework Vision de Apple únicamente para reconocimiento de texto. No se suben ni transmiten imágenes.</p>
+    <p><span class="tag">Permiso opcional</span> — solo se solicita cuando usas el escáner.</p>
+  </div>
+
+  <div class="card">
+    <h2><span class="emoji">🔒</span> Face ID / Touch ID</h2>
+    <p>La autenticación biométrica se utiliza para la función de bloqueo de la app. Los datos biométricos son gestionados completamente por el Secure Enclave de Apple. Moni no tiene acceso a tus datos biométricos.</p>
+    <p><span class="tag">Función opcional</span> — solo se activa cuando el bloqueo de app está habilitado.</p>
+  </div>
+
+  <div class="card">
+    <h2><span class="emoji">☁️</span> iCloud / CloudKit</h2>
+    <p>Cuando la sincronización con iCloud está activada, tus datos se almacenan en tu propia cuenta de iCloud (Apple ID). Esta base de datos es completamente privada: el desarrollador no tiene acceso a ella en absoluto.</p>
+    <p>Puedes desactivar la sincronización con iCloud en cualquier momento desde la Configuración de tu dispositivo.</p>
+  </div>
+
+  <div class="card">
+    <h2><span class="emoji">👨‍👩‍👧</span> Compartir en familia</h2>
+    <p>La función de Compartir en familia permite compartir datos de transacciones entre los miembros. Los datos fluyen exclusivamente a través de la infraestructura iCloud de Apple y nunca pasan por servidores del desarrollador.</p>
+  </div>
+
+  <div class="card">
+    <h2><span class="emoji">🔔</span> Notificaciones</h2>
+    <p>Las alertas de presupuesto, recordatorios de metas de ahorro y notificaciones de anomalías de gasto se generan en el dispositivo sin ningún servidor externo. Puedes cambiar los permisos de notificación en cualquier momento desde Configuración.</p>
+  </div>
+
+  <div class="card">
+    <h2><span class="emoji">👶</span> Privacidad de los menores</h2>
+    <p>Moni no está dirigida a menores de 13 años y no recopilamos conscientemente información personal de niños.</p>
+  </div>
+
+  <div class="card">
+    <h2><span class="emoji">✉️</span> Contacto</h2>
+    <p>Para preguntas sobre esta política de privacidad, contáctanos en:</p>
+    <p><a href="mailto:jgh1775@naver.com">jgh1775@naver.com</a></p>
+  </div>
+
+</div>
+
 <footer>
   <p>© 2026 Moni · <a href="mailto:jgh1775@naver.com">jgh1775@naver.com</a></p>
 </footer>
 
 <script>
-  function setLang(lang) {
+  function setLang(lang, btn) {
     document.querySelectorAll('.content').forEach(el => el.classList.remove('visible'));
-    document.querySelectorAll('.lang-switch button').forEach(btn => btn.classList.remove('active'));
+    document.querySelectorAll('.lang-switch button').forEach(b => b.classList.remove('active'));
     document.getElementById(lang).classList.add('visible');
-    event.target.classList.add('active');
+    btn.classList.add('active');
   }
 </script>
 
