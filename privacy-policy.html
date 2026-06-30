@@ -36,13 +36,15 @@
     }
     header .icon {
       width: 80px; height: 80px;
-      background: var(--blue);
       border-radius: 18px;
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 40px;
+      display: inline-block;
       margin-bottom: 16px;
+      overflow: hidden;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+    }
+    header .icon img {
+      width: 100%; height: 100%;
+      display: block;
     }
     header h1 { font-size: 28px; font-weight: 700; }
     header p  { color: var(--sub); margin-top: 6px; font-size: 15px; }
@@ -123,7 +125,7 @@
 <body>
 
 <header>
-  <div class="icon">💰</div>
+  <div class="icon"><img src="app-icon.png" alt="Moni" /></div>
   <h1>Moni</h1>
   <p>개인정보처리방침 &nbsp;/&nbsp; Privacy Policy &nbsp;/&nbsp; Política de Privacidad</p>
 </header>
